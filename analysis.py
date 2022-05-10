@@ -1,7 +1,7 @@
 import time
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from project.algorithm import *
+from algorithm import *
 
 
 def analyse_algorithm(algorithm):

@@ -1,6 +1,6 @@
 import pytest
 
-from project.algorithm import *
+from algorithm import *
 import numpy as np
 from numpy import testing
 

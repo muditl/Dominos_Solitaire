@@ -1,4 +1,4 @@
-from project.algorithm import *
+from algorithm import *
 
 grid = generate_random_grid(12, -10, 10)
 print("\n" + get_grid_string(grid))
