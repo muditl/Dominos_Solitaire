@@ -7,7 +7,7 @@ from algorithm import *
 def analyse_algorithm(algorithm):
     sizes = np.array([])
     times = np.array([])
-    for i in np.linspace(2, 7500, num=100):
+    for i in np.linspace(2, 20000, num=200):
         n = int(np.floor(i))
         grid_ = generate_random_grid(n, 0, 100)
         time_sort_start = time.perf_counter()
@@ -20,7 +20,7 @@ def analyse_algorithm(algorithm):
 
 def plot_times():
     x, y = analyse_algorithm(dynamic_programming_algorithm)
-    for i in tqdm(range(20), desc="Analysing algorithm"):
+    for i in tqdm(range(100), desc="Analysing algorithm"):
         x1, y1 = analyse_algorithm(dynamic_programming_algorithm)
         x = x + x1
         y = y + y1

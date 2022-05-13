@@ -136,3 +136,4 @@ def print_grid_sol(grid_, sol):
             print(Fore.GREEN + box_i + "|", end="")
         if not sol[i]:
             print(Fore.BLUE + box_i + "|", end="")
+    print(Fore.RESET)
